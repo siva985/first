@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Merienda+One|Niconne|Pacifico|Satisfy&display=swap');
+body{
+       margin:0;
+       padding: 0;
+       font-family: sans-serif;
+       background: url(3.jpg);
+       background-size: cover;
+       width: 100%;
+       height: 100vh;
+       background-repeat: no-repeat;
+      background-size: cover;
+    justify-content: space-between;
+}
+nav
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+nav .logo
+{
+    float: left;
+}
+nav .logo img
+{
+    height: 80px;
+    transition: .5s;
+}
+nav ul
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+} 
+nav ul li
+{
+    list-style: none;
+}
+nav ul li a
+{
+    line-height: 80px;
+    color: #fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    font-family: 'Aladin',cursive;
+}
+nav ul li a.active,
+nav ul li a:hover
+{
+    color: #000;
+    background: #fff;
+}
+h1{
+    margin-top: 100px;
+    padding-left: 30%;
+    right: 40px;
+    color: #000;
+    padding-top: 100px;
+     padding-left: 150px;
+    font-family: 'Merienda One',cursive;
+    color: grey;
+}
+.quotes{
+    position: static;
+    color: floralwhite;
+    margin-top: 35%;
+    margin-left: 30%;
+    text-shadow: 3px 3px 6px #000;
+    font-size: 20px;
+}
+.content{
+    position: fixed;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    margin-top: 30%;
+    text-align: center;
+    font-family: 'Pacifico',cursive
+}
+.wrapper {
+      position: absolute;
+    align-content: center;
+      top: 30%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      width: 40%;
+}
+path{
+     stroke: #fff;
+     fill: #fff;
+     stroke-dasharray: 1800;
+     opacity: 10;
+     animation: animate 8s cubic-bezier(0,0.23,1,.1) infinite;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+    90% {
+        fill: rgba(255,255,255,0);
+    }
+    100% {
+        opacity: 10;
+        fill: rgba(255,255,255,1);
+        stroke-dashoffset: 0;
+    }
+}
+.skills{
+    background: url(skills.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-top: 18%;
+}
+.container
+{
+    width: 90px;
+    margin: 30px auto;
+}
+.container .box
+{
+    width: 25%;
+    float: left;
+}
+.container .box .chart
+{
+    position: relative;
+    width: 110px;
+    height: 110px;
+    margin: 60px 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 110px;
+}
+.container .box canvas
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+h3{
+    color: #fff;
+}
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.catch{
+    background: #000;
+    height: 50vh;
+    width: 100%;
+}
+p{
+    color: #fff;
+    font-family: 'Satisfy',cursive;
+    text-align: center;
+}
+.media{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-53%,-50%);
+}
+.media ul li{
+    list-style: none;
+    margin: 10px 30px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+.media ul li:hover {
+    color: #292929;
+    border: 1px solid #292929;
+    transition: .5s;
+}
+.media p{
+    font-family: 'Niconne',cursive;
+    font-size: 22px;
+    font-weight: 500;
+}
